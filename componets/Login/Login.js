@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { Container,Button, Typography } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline'
-import style from '../../pages/login/assets/css/login.module.css'
+import style from '../../styles/login.module.css'
 import Image from 'next/dist/client/image';
 import Link from 'next/link'
 const Login = ({header,Img,account,link,alink}) => {
