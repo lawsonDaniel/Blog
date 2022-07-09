@@ -5,7 +5,9 @@ import { Container,Button, Typography } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline'
 import style from '../../pages/login/assets/css/login.module.css'
 import Image from 'next/dist/client/image';
-const Login = ({header,Img}) => {
+import Link from 'next/link'
+const Login = ({header,Img,account,link,alink}) => {
+  
   return (
    <>
    <CssBaseline />
@@ -15,8 +17,8 @@ const Login = ({header,Img}) => {
              <form  className={style.form}>
             <TextField  type="email"  label="Email" variant="outlined" />
             <TextField type="password"  label="password" variant="outlined" />
-            <Button  variant="outlined" value="submit" color="primary" gutterBottom={true}>Login</Button>
-            <Typography variant="caption">Dont Have a Accout? <a href="Register">Register</a></Typography>
+            <Button  variant="outlined" value="submit" color="primary" gutterBottom={true}>{header}</Button>
+            <Typography variant="caption">{account}<Link href={alink}><a>{link}</a></Link></Typography>
             </form>
             </div>
             <div>

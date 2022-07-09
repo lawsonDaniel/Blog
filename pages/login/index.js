@@ -4,7 +4,7 @@ import LoginImg from '../../pages/login/assets/img/login.svg'
 const index = () => {
   return (
     <div>
-        <Login header="Login" Img={LoginImg}/>
+        <Login header="Login" Img={LoginImg} account="Dont Have a Accout? " link="Register" alink="./Register"/>
     </div>
   )
 }

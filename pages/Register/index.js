@@ -1,8 +1,9 @@
 import React from 'react'
-
+import Login from '../../componets/Login/Login'
+import Regimg from './reg.svg'
 const index = () => {
   return (
-    <div>index</div>
+   <Login header="Register" Img={Regimg} account="Have an account? " link="login" alink="./login"/>
   )
 }
 
