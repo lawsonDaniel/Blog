@@ -6,7 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline'
 import style from '../../styles/login.module.css'
 import Image from 'next/dist/client/image';
 import Link from 'next/link'
-const Login = ({header,Img,account,link,alink}) => {
+const Form = ({header,Img,account,link,alink}) => {
   
   return (
    <>
@@ -33,4 +33,4 @@ const Login = ({header,Img,account,link,alink}) => {
   )
 }
 
-export default Login
+export default Form
