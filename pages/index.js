@@ -14,7 +14,11 @@ import Image from 'next/image';
 const index = () => {
   return (<>
     
-  <Container className={style.container}>
+  <Container  style={{
+      display:"grid",
+      gridTemplateColumns:"1fr 1fr",
+      padding: "20px"
+   }}>
        <div className={style.content}>
        <Typography variant="h4" style={{fontWeight:300}} component="div" gutterBottom>Welcome To This Very Basic Blog Website</Typography>
         <Typography variant="h6" style={{fontWeight:100}} component="div" gutterBottom>This website has a sole purpose of testing my blog API made with Node.js and Express.js</Typography>

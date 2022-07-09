@@ -11,7 +11,11 @@ const Login = ({header,Img,account,link,alink}) => {
   return (
    <>
    <CssBaseline />
-   <Container className={style.container}>
+   <Container style={{
+      display:"grid",
+      gridTemplateColumns:"1fr 1fr",
+      padding: "20px"
+   }}>
             <div className={style.loginform}>
             <Typography variant='h5'>{header}</Typography>
              <form  className={style.form}>
