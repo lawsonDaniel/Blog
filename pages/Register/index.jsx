@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from '../../componets/form/Form'
+import Form from '../../componets/form/Form.jsx'
 import Regimg from './img/reg.svg'
 const index = () => {
   return (

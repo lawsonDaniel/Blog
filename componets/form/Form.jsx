@@ -21,7 +21,7 @@ const Form = ({header,Img,account,link,alink}) => {
              <form  className={style.form}>
             <TextField  type="email"  label="Email" variant="outlined" />
             <TextField type="password"  label="password" variant="outlined" />
-            <Button  variant="outlined" value="submit" color="primary" gutterBottom={true}>{header}</Button>
+            <Button  variant="outlined" value="submit" color="primary" gutterBottom={true} type="submit">{header}</Button>
             <Typography variant="caption">{account}<Link href={alink}><a>{link}</a></Link></Typography>
             </form>
             </div>
