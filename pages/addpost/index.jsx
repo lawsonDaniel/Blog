@@ -1,9 +1,11 @@
 import React from 'react'
 import AddPost from '../../componets/AddPost/AddPost'
-
+import ToggleColorMode from '../../componets/form/Toggler'
 const index = () => {
   return (
-    <AddPost/>
+    <ToggleColorMode>
+       <AddPost/>
+    </ToggleColorMode>
   )
 }
 

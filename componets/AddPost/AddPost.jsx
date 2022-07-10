@@ -1,15 +1,19 @@
-import { Button, Container, CssBaseline, Grid, TextareaAutosize, TextField, Typography,FormControl,Input,FormHelperText,InputLabel, ButtonBase } from '@mui/material'
+import { Button, Container, CssBaseline, Grid, TextareaAutosize, TextField, Typography,FormControl,Input,FormHelperText,InputLabel, ButtonBase, Box } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 import img from '../../pages/addpost/img/img.svg'
 import style from '../../styles/Addform.module.css'
+import { DarkModeToggle } from '../form/Toggler'
 const AddPost = () => {
   return (
     <>
-    
-    <Container maxWidth="lg" minWidth="sm" style={{
-        padding:"20px"
-    }}>
+    <Box  sx={{
+        bgcolor: 'background.default',
+        color: 'text.primary',
+        padding: "20px",
+        height:'100vh'
+      }}  >
+    <Container maxWidth="lg" minWidth="sm" >
         <Grid container>
             <Grid item sm={12} lg={6} spacing={3} style={{
                 display:"flex",
@@ -35,10 +39,12 @@ const AddPost = () => {
                     </form>
             </Grid>
             <Grid item lg={6} >
+                <DarkModeToggle/>
                 <Image src={img} alt=""/>
             </Grid>
         </Grid>
     </Container>
+    </Box>
     </>
   )
 }

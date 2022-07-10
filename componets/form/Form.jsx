@@ -6,6 +6,8 @@ import CssBaseline from '@mui/material/CssBaseline'
 import style from '../../styles/login.module.css'
 import Image from 'next/dist/client/image';
 import Link from 'next/link'
+import { DarkModeToggle } from './Toggler';
+
 const Form = ({header,Img,account,link,alink}) => {
   
   return (
@@ -26,6 +28,7 @@ const Form = ({header,Img,account,link,alink}) => {
             </form>
             </div>
             <div>
+              <DarkModeToggle/>
                 <Image src={Img} alt=""/>
             </div>
     </Container>

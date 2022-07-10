@@ -1,5 +1,5 @@
 import { CssBaseline, Typography } from '@mui/material'
-import { Container } from '@mui/system'
+import { Box } from '@mui/system'
 import React from 'react'
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
@@ -10,15 +10,22 @@ import '@fontsource/roboto/700.css';
 import style from '../styles/Home.module.css'
 import img from './index.svg'
 import Image from 'next/image';
+import Toggler, { DarkModeToggle } from '../componets/form/Toggler';
+import ToggleColorMode from '../componets/form/Toggler';
 
 const index = () => {
-  return (<>
-    
-  <Container  style={{
-      display:"grid",
-      gridTemplateColumns:"1fr 1fr",
-      padding: "20px"
-   }}>
+  
+  return (
+  <>
+    <ToggleColorMode>
+  <Box  sx={{
+        bgcolor: 'background.default',
+        color: 'text.primary',
+        borderRadius: 1,
+        display:"grid",
+        gridTemplateColumns:"1fr 1fr",
+        padding: "20px"
+      }}  >
        <div className={style.content}>
        <Typography variant="h4" style={{fontWeight:300}} component="div" gutterBottom>Welcome To This Very Basic Blog Website</Typography>
         <Typography variant="h6" style={{fontWeight:100}} component="div" gutterBottom>This website has a sole purpose of testing my blog API made with Node.js and Express.js</Typography>
@@ -29,9 +36,11 @@ const index = () => {
     </Stack>
        </div>
        <div>
+        <DarkModeToggle/>
             <Image src={img} alt="" />
        </div>
-  </Container>
+  </Box>
+  </ToggleColorMode>
   </>
   )
 }
